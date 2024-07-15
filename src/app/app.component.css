@@ -1,0 +1,108 @@
+.section-title {
+  font-family:monospace;
+  color: white;
+  /* color: var(--primary-color); */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 1000;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.app-header {
+  background:black;
+  /* background: linear-gradient(135deg, #eb8cf9, #2193b0); */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  font-size: 40px;
+  font-weight: 600;
+  /* color: #2c3e50; */
+  color:white;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-bottom: 3px solid white; */
+  /* border-bottom: 3px solid #3498db; */
+  text-align: center;
+}
+
+.export-btn {
+  background: #ef558b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.export-btn i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.export-btn:hover {
+  background: #7b85f3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.export-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.app-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+.task-form-section,
+.task-list-section {
+  flex: 1;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 100px); /* Adjust height considering header height */
+  overflow-y: auto;
+}
+
+.task-form-section {
+  /* background: ; */
+  background-color: #2b4162;
+background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+
+  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
+}
+
+.task-list-section {
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  /* background: linear-gradient(135deg, #f5f7fa, #e2ebf0); */
+}
